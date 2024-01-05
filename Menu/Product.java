@@ -1,8 +1,8 @@
-package Product;
+package Menu;
 
-import Menu.DetailMenu;
+import Menu.Menu;
 
-public class Product extends DetailMenu {
+public class Product extends Menu {
     double price;
 
     public Product(String name, String desc, double price) {

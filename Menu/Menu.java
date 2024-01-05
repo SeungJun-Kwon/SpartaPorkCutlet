@@ -1,6 +1,6 @@
 package Menu;
 
-public class Menu {
+public abstract class Menu {
     String name;
     String desc;
 
@@ -15,9 +15,5 @@ public class Menu {
 
     public String getDesc() {
         return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
     }
 }

@@ -1,5 +1,4 @@
 package Menu;
-import Product.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +13,6 @@ public class DetailMenu extends Menu {
 
     public List<Product> getProductList() {
         return productList;
-    }
-
-    public void setProductList(List<Product> productList) {
-        this.productList = productList;
     }
 
     public void addProduct(Product product) {

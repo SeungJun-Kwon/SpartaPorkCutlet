@@ -14,10 +14,6 @@ public class TopMenu extends Menu {
         return childMenuList;
     }
 
-    public void setChildMenuList(List<DetailMenu> childMenuList) {
-        this.childMenuList = childMenuList;
-    }
-
     public void addChildMenu(DetailMenu childMenu) {
         childMenuList.add(childMenu);
     }

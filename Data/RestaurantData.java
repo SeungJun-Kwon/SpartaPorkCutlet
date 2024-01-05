@@ -2,7 +2,7 @@ package Data;
 
 import Menu.DetailMenu;
 import Menu.TopMenu;
-import Product.Product;
+import Menu.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +37,11 @@ public class RestaurantData {
     Product mushroomPorkCurry = new Product("머쉬룸포크카레", "버섯향이 느껴지는 부드럽고 진한 카레", 9500);
     Product shrimpTempuraCurry = new Product("에비텐카레", "새우튀김이 들어간 부드럽고 진한 카레", 11500);
 
+    Product p_miniCurry = new Product("미니 카레라이스", "맛있는 미니 카레", 4500);
+    Product p_miniPorkCutlet = new Product("미니 돈까스", "바삭바삭한 미니 돈까스", 5500);
+    Product p_shrimpTempura = new Product("에비텐(새우 튀김)", "새우 튀김", 3000);
+    Product p_miniUdon = new Product("미니 우동", "뜨끈뜨끈한 미니 우동", 4500);
+
     public void Init() {
         mainMenu.addChildMenu(porkCutlet);
         mainMenu.addChildMenu(soba);
@@ -63,5 +68,10 @@ public class RestaurantData {
 
         curry.addProduct(mushroomPorkCurry);
         curry.addProduct(shrimpTempuraCurry);
+
+        miniCurry.addProduct(p_miniCurry);
+        miniUdon.addProduct(p_miniUdon);
+        miniPorkCutlet.addProduct(p_miniPorkCutlet);
+        shrimpTempura.addProduct(p_shrimpTempura);
     }
 }
